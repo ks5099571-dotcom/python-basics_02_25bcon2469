@@ -1,35 +1,55 @@
-# python-basics_02_25bcon2469
-basic python program
-# Student Class Program
+ # Student Class Program
 
-## Description
+This is a simple Python program to store and display the details of a student.
 
-This is a simple Python program that demonstrates the use of a class and object. 
-The program creates a Student class and stores the student's name, roll number, 
-and marks.
+## How it works
 
-## How It Works
+First, a `Student` class is created. It has three variables:
 
-The program first creates a `Student` class with three attributes: `name`, 
-`roll`, and `marks`.
+- `name` for the student's name
+- `roll` for the roll number
+- `marks` for the marks
 
-An object named `s1` is then created using the Student class. Values are assigned 
-to the object, and the student's details are displayed using print statements.
+Then an object `s1` is created from the `Student` class.
 
-## Requirements
+The details of Rahul are stored in the object and printed on the screen.
 
-- Python 3.x
-- No external libraries are required.
+## Code
 
-## How to Run
+```python
+class Student:
+    def __init__(self):
+        self.name = ""
+        self.roll = 0
+        self.marks = 0.0
 
-1. Save the program in a Python file, for example `student.py`.
-2. Open a terminal.
-3. Run the program using:
+s1 = Student()
 
-```bash
+s1.name = "Rahul"
+s1.roll = 101
+s1.marks = 87.5
+
+print("Name:", s1.name)
+print("Roll:", s1.roll)
+print("Marks:", s1.marks)
+Requirements
+
+Python 3 is required to run this program. No extra libraries are needed.
+
+How to Run
+
+Save the program as student.py and run it using:
+
 python student.py
-Example Output
+Output
 Name: Rahul
 Roll: 101
 Marks: 87.5
+Class and Object
+
+Student is the class used to store student information.
+
+s1 is an object of the Student class.
+
+The program assigns Rahul's name, roll number, and marks to the object and
+then displays them.
